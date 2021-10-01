@@ -1,0 +1,17 @@
+user_year = int(input("number of years: "))
+all_exhibits = 2800000
+minute_for_one = 5
+hour_a_day = 8
+exhibits_per_year = ((hour_a_day * 60)/minute_for_one) * 365
+answer_n_exhibits = user_year * exhibits_per_year
+
+print ("you can view", answer_n_exhibits,"exhibits")
+
+user_exhibits = int(input("number of exhibits: "))
+minutes = user_exhibits * minute_for_one
+
+days = user_exhibits/((hour_a_day * 60)/minute_for_one)
+
+years = user_exhibits/exhibits_per_year
+
+print ("you need", years, "years or", days, "days or", minutes, "minutes")
